@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="scss/main.css">
+    
+</head>
+
+
+
+<header>
+    <div class="headerMain">
+        <div class="headerLeft ">
+            <div class="hamburger">
+                <i class="fa-solid fa-bars" ></i><div class="mobile">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Countact</a></li>
+                </ul>
+            </div>
+            </div>
+            
+            <ul class="desktop">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Countact</a></li>
+            </ul>
+        </div>
+        <div class="headerCenter">
+            <a href="index.html"><img src="media/logo2021.png" alt=""></a>
+        </div>
+        <div class="headerRight"><iframe src="aid/couner.html" frameborder="0"></iframe></div>
+    </div>
+    </nav>
+</header>
+<main class="contactMain">
+    <form>
+        <div class="mb-3">
+            <label for="uName" class="form-label"> * First And Last Name</label>
+            <input type="text" class="form-control" placeholder="blabla"  id="uName" aria-describedby="emailHelp">
+            <span id="uNameError">* Name Is Required</span>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">* Email address</label>
+            <input type="text" class="form-control" placeholder="Never share your email with anyone else." id="uEmail" aria-describedby="emailHelp">
+            <span id="uEmailError">* Email Is Required</span>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">PHONE</label>
+            <input type="text" class="form-control" id="uPhone" aria-describedby="emailHelp">
+        </div>
+        <div class="labelsContact">
+            <span>TYPE OF ACCOUNT</span>
+            <span>SUBJECT</span>
+        </div>
+        <div class="contactSelector">
+            <select class="form-select" aria-label="Default select example">
+    
+                <option selected>Guest</option>
+                <option value="1">Registered Account</option>
+                <option value="2">Active sponsor</option>
+                <option value="3">Gold sponsor</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>About the site </option>
+                <option value="1">Events</option>
+                <option value="2">Activitis</option>
+                <option value="3">Parade</option>
+                <option value="4">Become sponsor</option>
+            </select>
+        </div>
+
+
+        
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <input type="button" id="submit" value="Submit"></input>
+    </form>
+
+</main>
+
+<hr>
+<footer>
+    <nav class="navbar footerNav">
+        <div class="container-fluid upFooter">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 footerInput" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">&#x1F50D;</button>
+                <div class="icons">
+                    <a href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank" class="icon"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank" class="icon"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://twitter.com/MardiGrasNOLA" target="_blank" class="icon"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/mardigrasneworleans/" target="_blank" class="icon"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:press@mardigrasneworleans.com" class="icon"><i
+                            class="fa-regular fa-envelope"></i></a>
+                    <a href="index.html" class="icon"><i class="fa-solid fa-house"></i></a>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class="bottom">
+        <span>כל הזכוית שמורות לשחף סיסו בלבד © .1996-2022
+            <a id="myWeb" href="https://mywebsite890-6a0cb.web.app"> - https://mywebsite890-6a0cb.web.app</a></span>
+            <div class="bLinks">|
+                <a href="about.html">ABOUT</a> ||
+<a href="media.html">MEDIA</a> ||
+<a href="faq.html">FAQ</a> ||
+<a href="contact.html">CONTACT</a> |
+</div>
+    </div>
+</footer>
+<script src="script/contact.js"> </script>
+</body>
+
+</html>

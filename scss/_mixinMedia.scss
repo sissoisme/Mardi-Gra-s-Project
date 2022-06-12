@@ -1,0 +1,11 @@
+
+@mixin moblie {
+    @media(max-width:600px) {
+        @content;
+    }
+}
+@mixin smallMoblie {
+    @media(max-width:400px) {
+        @content;
+    }
+}

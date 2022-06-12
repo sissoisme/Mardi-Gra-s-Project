@@ -1,0 +1,50 @@
+@import "home";
+@import "about";
+@import "media";
+@import "header";
+@import "footer";
+@import "contact";
+@import "variables";
+@import "faq";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+     background-image: linear-gradient(to bottom right, $primary, $secondary, $tertiary, $primary, $secondary, $tertiary, $primary, $secondary, $tertiary, $primary, $secondary, $tertiary, $primary, $secondary, $tertiary, $primary, $secondary, $tertiary);
+}
+
+hr {
+    margin-top: 6vh;
+    margin-bottom:-2vh;
+}
+
+.gapOne {
+    margin-top: 22vh !important;
+}
+
+.gapTwo {
+    margin-top: 14vh !important;
+}
+
+.short {
+    margin: 0 auto;
+    width: 80%;
+    @include moblie {
+        .short{width: 100% !important;}
+    }
+
+}
+.emptyBox{
+    width: 100vw;
+    padding: 200px;
+    height: 100vh;
+    background-color: blanchedalmond;
+}
+
+.fixfoot{margin-top: 6vh; }

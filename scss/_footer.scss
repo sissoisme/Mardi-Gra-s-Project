@@ -1,0 +1,165 @@
+@import "variables";
+@import "mixinMedia";
+
+%footer {
+
+
+    width: 100% !important;
+    border-top: 5px double darkslategray;
+    height: 12vh;
+    background-color: $tertiary;
+    font-family: $textFont;
+
+
+    nav {
+        background-color: $secondary;
+    }
+}
+
+%btn {
+    padding: 0px;
+    width: 8vh;
+    height: 4vh;
+    border-color: rgb(71, 1, 71);
+    margin-top: 5px;
+
+}
+
+
+ul {
+
+    list-style-type: none;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 0.6em;
+    border-left: 2px gray solid;
+    font-family: $textFont;
+
+}
+
+
+
+
+
+footer {
+    @extend%footer;
+
+}
+
+.btn {
+    @extend%btn
+}
+
+
+
+
+.btn:hover {
+    background-color: rgb(207, 231, 240);
+}
+
+input.footerInput {
+    margin-top: 5px;
+    height: 4vh;
+    width: 45vw !important;
+}
+
+nav.footerNav {
+    width: 100%;
+}
+
+span {
+    color: $white;
+    font-size: 0.5em;
+    padding-top: 10px;
+}
+
+#myWeb {
+    color: $white;
+    font-size: 1em;
+    padding-top: 10px;
+    font-weight: 700;
+    font-family: $textFont;
+    letter-spacing: 2px;
+}
+
+.bottom a {
+    color: $black;
+    font-size: 2.4vh;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: $textFont;
+}
+
+.bottom a:hover {
+    color: $white;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    background-color: $primary;
+    width: 100%;
+    font-size: 19px;
+
+    .bLinks {
+        margin-left: 450px;
+
+        span {
+            width: 40%;
+        }
+
+        @include moblie {
+            width: 60%;
+
+            height: 6vh;
+            margin-left: 0px;
+
+            a {
+                font-size: 12px;
+            }
+
+            text-align: center;
+        }
+
+        @include smallMoblie {
+            display: none;
+        }
+    }
+
+
+}
+
+
+.icons i {
+
+    font-size: 3.2vw;
+    letter-spacing: 25px;
+    color: $primary;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+.icon i:hover {
+    text-shadow: 1px 1px 7px black;
+}
+
+.icons {
+    text-align: right;
+    width: 50%;
+    margin-left: 150px;
+    padding-left: 100px;
+
+    @include moblie {
+        padding-left: 0px;
+    }
+
+    @include smallMoblie {
+        padding: 0px;
+        margin: 0px;
+
+        i {
+            letter-spacing: 20px;
+        }
+    }
+
+}

@@ -1,0 +1,96 @@
+@import "variables";
+
+.faqBottom {
+    h2 {
+        padding-top: 30px;
+        font-size: 1.6em;
+        font-family: $headFont;
+    }
+
+    a {
+        font-size: 1.0em;
+        color: purple;
+
+    }
+
+}
+
+.faqMain {
+    background-color: white;
+
+    h1 {
+        padding: 10px;
+
+    }
+}
+
+#faqF {
+    color: $primary;
+
+}
+
+#faqA {
+    color: $secondary
+}
+
+#faqQ {
+    color: $tertiary
+}
+
+#faqF,
+#faqA,
+#faqQ {
+    font-size: 10rem;
+    font-family: $headFont;
+    text-shadow: -5px -5px #999, -10px -10px #666, -15px -15px #333;
+}
+
+.accordion {
+    border: 5px double $primary;
+    border-radius: 15px;
+    font-family: $textFont;
+    box-shadow: 0 0 15px 2px black;
+}
+
+.faqHead {
+    text-align: center;
+    font-family: $headFont;
+}
+
+.accordion-item {
+    a{text-shadow: 1px 1px 1px rgb(0, 0, 0);}
+    border: none;
+    background-color: rgba(52, 180, 231, 0.5);
+    padding: 2px;
+}
+
+
+
+.accordion-item button[data-bs-target="#collapseOne"],
+.accordion-item button[data-bs-target="#collapseFour"],
+.accordion-item button[data-bs-target="#collapseSeven"],
+.accordion-item button[data-bs-target="#collapseTen"] {
+    background-color: $primary;
+}
+
+.accordion-item button[data-bs-target="#collapseTwo"],
+.accordion-item button[data-bs-target="#collapseFive"],
+.accordion-item button[data-bs-target="#collapseEight"] {
+    background-color: $secondary;
+}
+
+.accordion-item button[data-bs-target="#collapseThree"],
+.accordion-item button[data-bs-target="#collapseSix"],
+.accordion-item button[data-bs-target="#collapseNine"] {
+    background-color: $tertiary;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+}
+
+@include moblie {
+    main.gapTwo {
+        width: 100%;
+    }
+}

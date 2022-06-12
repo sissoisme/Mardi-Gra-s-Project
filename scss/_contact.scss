@@ -1,0 +1,149 @@
+@import "variables";
+@import "mixinMedia";
+
+main.contactMain {
+
+    width: 38vw;
+    display: grid;
+    margin: 0 auto ;
+    background-color: hsla(50, 90%, 50%, 0.6);
+    margin-top: 22vh;
+    text-align: center;
+    border: 16px $primary double;
+    border-radius: 50px;
+    box-shadow: 30px 15px 5px;
+ #uEmail{font-family: $textFont; }
+    @include moblie {
+        width: 90% !important;
+       
+    }@include smallMoblie{
+        width: 100% !important;
+    }
+
+
+    form {
+        padding-top: 20px;
+
+        @include moblie {
+            width: 90% !important;
+            text-align-last: center;
+            margin: 0 auto;
+
+        }
+
+    }
+
+    form input {
+        width: 90%;
+        margin: 0 auto;
+        border: 5px $primary double;
+        height: 6vh !important;
+        
+
+
+
+    }
+
+    .contactSelector {
+        display: flex;
+        justify-content: space-around;
+        font-family: $textFont;
+        padding: 15px;
+    }
+
+    .form-check-label {
+        padding-left: 60px;
+        font-family: $textFont;
+        font-size: 0.8em;
+    }
+
+    .contactRadio {
+
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        font-size: 1rem;
+        border: 5px $primary solid;
+    }
+
+
+    select {
+        
+        width: 45%;
+        border: 5px $primary solid;
+        font-family: $textFont;
+        
+
+    }
+
+    .form-check-input1 {
+        width: 1.2rem !important;
+    }
+
+
+
+    #floatingTextarea {
+        height: 16vh;
+        border: 9px $primary double;
+        width: 90%;
+        margin: 20px auto;
+        font-size: 1.2em;
+        font-family: $textFont;
+
+    }
+
+    .btnContact {
+        width: 100% !important;
+        height: 8vh;
+        
+
+    }
+
+    .form-label {
+        font-size: 3vh;
+        font-family: $textFont;
+        text-shadow: 2px 2px 4px $primary;
+    }
+
+
+
+    .labelsContact {
+        display: flex;
+        width: 94%;
+        justify-content: space-around;
+        font-family: $textFont;
+        font-size: 2em;
+        span {
+            color: black;
+            font-size: 3vh;
+            font-family: $textFont;
+            text-shadow: 2px 2px 4px $primary;
+            @include smallMoblie {font-size: 0.5em;}
+            
+        }
+
+    }
+}
+
+#submit {
+    border-radius: 20px;
+    margin: 5px 0px 30px 0px;
+    background-color: $primary;
+    font-size: 1.5em;
+    width: 90% !important;
+    height: 12vh !important;
+    border: 3px solid black;
+    font-family: $textFont;
+}
+
+
+
+#uEmailError, #uNameError{
+    font-size: 1em;
+    color: red;
+    font-weight: 600;
+    font-family: $textFont;
+    visibility: hidden;
+}

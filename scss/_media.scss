@@ -1,0 +1,69 @@
+.videos {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    margin-top: 22vh;
+    margin-bottom: 20px;
+    border: 5px black solid;
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.box {
+
+    @include moblie{
+        column-count: 1;
+    }
+    column-count: 2;
+    column-gap: 0px;
+    overflow-y: hidden;
+    width: 100%;
+    background-color: black;
+
+
+}
+
+
+
+.container {
+    width: 100vw;
+    height: 390vh;
+    margin-top: 22vh;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+figure {
+    margin: 0;
+    grid-template-rows: 1fr 1fr auto;
+    break-inside: avoid;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    border: 5px rgb(0, 0, 0) solid;
+
+    img {
+        max-width: 100%;
+        display: block;
+        grid-row: 1 / -1;
+        grid-column: 1;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+        transition: transform 1s;
+    }
+
+    figcaption a {
+        display: none;
+    }
+}
+
+.lastFigure {
+    height: 16.5vw;
+
+    width: 100%;
+}

@@ -1,0 +1,176 @@
+@import 'variables';
+@import "mixinMedia";
+
+section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    margin: 35px 0;
+    h2, h3{font-family: $headFont;}
+    p{font-family: $textFont;}
+
+    .rightSide {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        font-size: 0.8em;
+        background-image: -webkit-linear-gradient(top left, rgba(0, 0, 0, 0.5), $secondary, $white);
+    }
+
+    .leftSide {
+        width: 60%;
+    }
+}
+
+
+#secOne {
+    margin: 0 auto;
+
+
+    .leftSide {
+
+        iframe.about {
+            width: 86%;
+            margin: 15% 0% 15% 25px;
+            border: 20px double black;
+            box-shadow: 15px 15px 15px black;
+
+        }
+        img {
+            width: 70%;
+            margin: 0% 10% 0 10%;
+            border: 5px solid black;
+            box-shadow: 15px 15px 15px black;
+        }
+        
+        img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s;
+        }
+
+        iframe.about:hover {
+            transform: scale(1.25);
+            transition: 2s ease;
+        }
+    }
+
+    .rightSide {
+        border: 5px black solid !important;
+
+        h2 {
+            text-align: center;
+        }
+
+        padding: 25px;
+    }
+}
+
+#secTwo {
+    height: 170vh;
+
+    .rightSide {
+        h2 {
+            text-align: center;
+        }
+
+        padding: 25px;
+    }
+
+    .leftSide {
+        img {
+            width: 70%;
+            margin: 12% 10% 0 10%;
+            border: 5px solid black;
+            box-shadow: 15px 15px 15px black;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s;
+        }
+    }
+}
+
+#secThree {
+    border-radius: 50px;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    background-image: -webkit-radial-gradient(center, $white, $tertiary, $black);
+
+    div {
+        width: 79vw;
+        height: 40vh;
+        background-image: url(../media/mardigrasAbout4.jpg);
+        background-size: 80vw 40vh;
+    }
+
+    span {
+        font-size: 8rem;
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.804);
+        font-family: $headFont;
+        padding-left: 150px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        padding: 20px 50px;
+        line-height: 1.2;
+        font-size: 0.8em;
+    }
+
+}
+
+#secFour {
+    height: 120vh;
+    border-radius: 50px;
+    background-image: -webkit-linear-gradient(top left, black, $primary, $white);
+    img{width: 60%;
+    height: 100%;}
+
+    .leftSide {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 0.8em;
+
+
+    }
+}
+
+iframe.about {
+    width: 45vw;
+    height: 40vh;
+}
+
+img.about {
+    width: 45vw;
+    height: 40vh;
+}
+
+@include moblie {
+    #justKillThatResponsive{width: 100% !important;
+        section{display: flex;
+            height: 0%;
+        flex-direction: column;}
+        .rightSide{width: 100%;}
+        .leftSide{width: 100%;}
+        iframe.about, section .leftSide a img{width: 100% !important; margin: 0;}
+        #secOne iframe.about{margin: 0% 0% 5% 0px;}
+        #secOne .rightSide{height: 80vh;}
+        #secThree{div{width: 100%; text-align: center;
+        span{padding: 0}}}
+        
+            
+        
+
+
+
+}
+}
+
