@@ -154,6 +154,9 @@ img.about {
 }
 
 @include moblie {
+    #lois {
+            font-size: 20vw;
+        }
     #justKillThatResponsive {
         width: 100% !important;
         section {
@@ -187,9 +190,7 @@ img.about {
                 }
             }
         }
-        #lois {
-            font-size: 20vw;
-        }
+        
     }
 }
 
