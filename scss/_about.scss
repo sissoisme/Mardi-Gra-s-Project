@@ -154,23 +154,42 @@ img.about {
 }
 
 @include moblie {
-    #justKillThatResponsive{width: 100% !important;
-        section{display: flex;
+    #justKillThatResponsive {
+        width: 100% !important;
+        section {
+            display: flex;
             height: 0%;
-        flex-direction: column;}
-        .rightSide{width: 100%;}
-        .leftSide{width: 100%;}
-        iframe.about, section .leftSide a img{width: 100% !important; margin: 0;}
-        #secOne iframe.about{margin: 0% 0% 5% 0px;}
-        #secOne .rightSide{height: 80vh;}
-        #secThree{div{width: 100%; text-align: center;
-        span{padding: 0}}}
-         #lois{font-size: 20vw;}
-            
-        
-
-
-
-}
+            flex-direction: column;
+        }
+        .rightSide {
+            width: 100%;
+        }
+        .leftSide {
+            width: 100%;
+        }
+        iframe.about,
+        section .leftSide a img {
+            width: 100% !important;
+            margin: 0;
+        }
+        #secOne iframe.about {
+            margin: 0% 0% 5% 0px;
+        }
+        #secOne .rightSide {
+            height: 80vh;
+        }
+        #secThree {
+            div {
+                width: 100%;
+                text-align: center;
+                span {
+                    padding: 0
+                }
+            }
+        }
+        #lois {
+            font-size: 20vw;
+        }
+    }
 }
 
