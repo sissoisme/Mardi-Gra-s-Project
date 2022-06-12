@@ -51,10 +51,6 @@ figure {
         grid-row: 1 / -1;
         grid-column: 1;
     }
-    @include smallMoblie{
-        img:hover {
-            transform: scale(1.3);
-    }
 }
     img:hover {
         transform: scale(1.1);
